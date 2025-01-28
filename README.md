@@ -1,10 +1,10 @@
 # CX-Cloud-from-Genesys-and-Salesforce-Screen-Pop
 
-CX Cloud from Genesys and Salesforce has a limitation that only the screen pop of built-in voice call record and contact records using [Object Linking](https://developer.salesforce.com/docs/atlas.en-us.voice_pt_developer_guide.meta/voice_pt_developer_guide/voice_pt_record_linking.htm "Opens the Record Linking section in Salesforce Developer documentation") are supported
+CX Cloud from Genesys and Salesforce has a limitation in that it only supports screen popping of built-in voice call records and contact records via [Object Linking](https://developer.salesforce.com/docs/atlas.en-us.voice_pt_developer_guide.meta/voice_pt_developer_guide/voice_pt_record_linking.htm).
 
-Some customers prefer to screen pop different objects instead of the Contact object, such as Account (Personal Account).
+However, some customers prefer to screen pop objects other than the Contact object, such as Account (Personal Account).
 
-This project utilizes Flow for Record Link and a Lightning Web Component (LWC) to open the linked records as subtabs (screen pop).
+This project leverages Flow for Record Linking and a Lightning Web Component (LWC) to open the linked records as subtabs (screen pop).
 
 # Configuration of Salesforce
 
