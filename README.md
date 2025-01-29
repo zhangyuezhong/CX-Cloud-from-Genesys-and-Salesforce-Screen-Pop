@@ -10,7 +10,7 @@ This project leverages Flow for Record Linking and a Lightning Web Component (LW
 
 1.  From Setup, enter Channel-Object in the Quick Find box, then select **Channel-Object Linking**.
 2.  Turn off the Channel-Object Linking or disable the Channel-Object Linking Rules for Phone.
-3.  From Setup, enter Partner Telephony Setup, scroll the page to the bottom and find **Match Callers to End User Records** (Turn Off).
+3.  From Setup, enter **Partner Telephony Setup**, scroll the page to the bottom and find **Match Callers to End User Records** (Turn Off).
 
 ## Deployment
 
@@ -19,7 +19,7 @@ In VSCode, right-click on the manifest (package.xml) and select **SFDX: Deploy S
 ## What will be deployed ?
 
 - **Flow: Voice_Call_Set_Related_Record**  
-  When a Voice Call record is created, this flow will be triggered. The flow searches for an Account by matching the phone number to the `FromPhoneNumber` field of the Voice Call. If a match is found, the flow will update the Voice Call’s "Related Record" field with the corresponding Account.
+  When a Voice Call record is created, this flow will be triggered. The flow searches for an Account by matching the phone number to the `FromPhoneNumber` field of the Voice Call. If a match is found, the flow will update the Voice Call’s "Related Record" field with the corresponding Account.   (You may need to change this flow based your business requirement)
 
 - **LWC Component: voiceCallOpenRelatedRecordAsSubTab**  
   Please edit your Voice Call Lightning record page and add the `voiceCallOpenRelatedRecordAsSubTab` component to the page. You can place it anywhere on the page, as this component doesn't display any content. It simply provides functionality to open related records in a subtab.
